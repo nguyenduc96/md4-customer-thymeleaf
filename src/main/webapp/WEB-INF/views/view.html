@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Customer Info</title>
+</head>
+<body>
+<h3>Customer Information</h3>
+<div>
+    Id : <label th:text="${customer.id}"></label>
+</div>
+<div>
+    Name : <label th:text="${customer.name}"></label>
+</div>
+<div>
+    Email : <label th:text="${customer.email}"></label>
+</div>
+<div>
+    Address : <label th:text="${customer.address}"></label>
+</div>
+<a href="/">Back to list</a>
+
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>
